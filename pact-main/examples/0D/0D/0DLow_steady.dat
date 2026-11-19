@@ -1,0 +1,50 @@
+!
+! 1D self-consistent atmosphere model 
+! Radiative-convective temperature and non-equilibrium chemistry
+!
+! Planet radius                        =   12.7     REarth
+! Planet mass                          =   359.     MEarth
+! Planet internal temperature          =     100.00 K
+! Planet surface albedo                =       0.00
+! Planet surface emissivity            =       1.00
+! Heat redistribution factor           =   1.00    
+! Zenith angle                         =    60.     deg
+! Star radius                          =  0.805     Rsun
+! Star-planet distance                 =  3.142E-02 au
+! Star spectrum file                   : hd189733.star
+! Star effective temperature           =    5000.00 K
+! Number of layers                     =   2
+! Pressure range                       = 1.00E-03-1.00E-03 bar
+! Species file                         : species_VULCAN.spec
+! NASA polynomials file                : therm_vulcan6.therm
+!
+! Radiative convective model parameters:
+!
+! Wavelength grid                      =  0.0    - 0.0     um
+! Resolution (R=lambda/Dlambda)        =    0.0    
+! Number of opacity species            =   0
+! 
+! Planet effective temperature (theor) =    1220.21 K
+! Planet effective temperature         =       0.00 K
+! Radiative-convective transition      =   1.00E-03 bar
+! Detached convective zone?            : No 
+! Temperature computation convergence  =    0.0    
+!
+! Non-equilibrium chemistry parameters:
+!
+! Reaction file                        : SNCHO_vulcan_network.reac
+! Initial temperature                  : 0DLow_in.dat
+! Self-consistent temperature included?: No
+! Diffusion included?                  : No
+! Photochemistry included?             : No
+! Continuity equation integrated up to =  1.3693E+12 s
+!   with mole fraction relative error  =  0.1518    
+! Steady state reached?                : No
+!
+! .......................................................
+! z,p,T, and mixing ratios (decimal logarithm):
+!
+!        1               2               3                   4              5              6              7              8              9             10             11             12             13             14             15             16             17             18             19             20             21             22             23             24             25             26             27             28             29             30             31             32             33             34             35             36             37             38             39             40             41             42             43             44             45             46             47             48             49             50             51             52             53             54             55             56             57             58             59             60             61             62             63             64             65             66             67             68             69             70             71             72             73             74             75             76             77             78             79             80             81             82             83             84             85             86             87             88             89             90             91             92             93             94
+    height[km]     pressure[bar]    temperature[K]         C              C2             C2H            C2H2           C2H3           C2H3CN         C2H4           C2H5           C2H6           C3H2           C3H3           C3H5           C4H2           C4H3           C4H5           C6H5           C6H6           CH             CH2            CH2CCH2        CH2CN          CH2NH          CH2NH2         CH2OH          CH2_1          CH3            CH3CCH         CH3CHO         CH3CN          CH3CO          CH3NH2         CH3O           CH3OH          CH3S           CH3SH          CH4            CN             CO             CO2            COS            CS             CS2            H              H2             H2CCO          H2CN           H2CO           H2CS           H2O            H2O2           H2S            HC3N           HCCO           HCN            HCO            HCS            HNCO           HNO            HNO2           HO2            HS2            HSO            He             N              N2             N2H            N2H2           N2H3           N2H4           N2O            NCO            NH             NH2            NH3            NO             NO2            NS             N_2D           O              O2             OH             O_1            S              S2             S2O            S3             S4             S8             SH             SO             SO2            
+            NaN      1.0000E-03         800.000         -36.296451     -41.952767     -29.021652     -12.700510     -21.194431     -15.969761     -10.959636     -18.891323     -11.740767     -23.562278     -16.624361     -19.872147     -17.765815     -26.672626     -20.175391     -14.825733      -4.394023     -32.272155     -23.244785     -17.385093     -15.192765     -10.315128     -19.800898     -22.896296     -26.056454     -12.473707     -16.734841     -18.294044      -9.070606     -22.989343     -14.293987     -25.260985     -16.408168     -18.021482     -13.306607      -3.652496     -18.802019      -4.076392      -6.275165      -9.890364     -14.697110     -12.292714     -10.076038      -0.080127     -16.267271     -14.789622     -13.342354     -13.133373      -2.903526     -26.800961      -4.617953     -18.080054     -26.155994      -3.929160     -17.748566     -18.686135     -12.632725     -26.330447     -32.027285     -28.230606     -14.743096     -13.503647      -0.777958     -27.219198      -5.837163     -25.643803     -27.821904     -29.874142     -26.363503     -29.107473     -22.832969     -23.432801     -16.866579      -6.776510     -18.964915     -31.148777     -20.093538     -38.524277     -26.203609     -24.798241     -16.259227     -38.800781     -15.835912     -12.715646     -20.171392     -20.856253     -28.923017     -57.386164     -10.609960     -16.862921     -17.321128
+            NaN      1.0000E-03         800.000         -36.296451     -41.952767     -29.021652     -12.700510     -21.194431     -15.969761     -10.959636     -18.891323     -11.740767     -23.562278     -16.624361     -19.872147     -17.765815     -26.672626     -20.175391     -14.825733      -4.394023     -32.272155     -23.244785     -17.385093     -15.192765     -10.315128     -19.800898     -22.896296     -26.056454     -12.473707     -16.734841     -18.294044      -9.070606     -22.989343     -14.293987     -25.260985     -16.408168     -18.021482     -13.306607      -3.652496     -18.802019      -4.076392      -6.275165      -9.890364     -14.697110     -12.292714     -10.076038      -0.080127     -16.267271     -14.789622     -13.342354     -13.133373      -2.903526     -26.800961      -4.617953     -18.080054     -26.155994      -3.929160     -17.748566     -18.686135     -12.632725     -26.330447     -32.027285     -28.230606     -14.743096     -13.503647      -0.777958     -27.219198      -5.837163     -25.643803     -27.821904     -29.874142     -26.363503     -29.107473     -22.832969     -23.432801     -16.866579      -6.776510     -18.964915     -31.148777     -20.093538     -38.524277     -26.203609     -24.798241     -16.259227     -38.800781     -15.835912     -12.715646     -20.171392     -20.856253     -28.923017     -57.386164     -10.609960     -16.862921     -17.321128

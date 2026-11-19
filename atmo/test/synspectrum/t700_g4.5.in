@@ -1,0 +1,21 @@
+# input
+
+&PARAM Debug = 0 fin='t700_g4.5_f2.5E5.ncdf' fout='t700_g4.5_f2.5E2.ncdf'/
+
+&UNITS unitL =1. unitT=1. unitM=1./
+
+&GRID teff = 700. nfreq=250 numax=2.50E6 logg = 4.5 pmin = 1.0E-5 taumax = 100. taumin = 1.0E-7/
+
+&EOS gamma=0./
+
+# imol = 1 is H2 and imol = 2 is He
+&CHEMISTRY nmol = 9 chem='ana' /
+
+&OPACITY nkap = 8 /
+
+&SOLVER solve_hydro = T solve_energy = T tauconv = 1.0E-10 nbin = 1 minstep = 0.1 maxstep = 0.9 accuracy = 1.0E-3 include_dkapdpt=False/ 
+ 
+&RADTRANS nrays = 16  fspectrum='t700_spectrum.ncdf'/
+
+&CONVECTION alpha = 1.5/
+

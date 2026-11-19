@@ -1,0 +1,30 @@
+ 1  A
+ C4H4 + photon = C4H3 + H
+!
+! photoabsorption cross section from Fahr & Nayak 1996, Chem Phys, 203, 351, data retrieved from https://uv-vis-spectral-atlas-mainz.org/
+!
+! photoionization threshold is 129.4 nm (NIST Webbook)
+! photoionization yield assumed to be 1 shortwards of ionization threshold and 0 longwards
+!
+! sigma is the total photoabsorption cross section
+! yield is the photodissociation yield relative to photoabsorption
+!
+! wlth[nm]  sigma[cm2]   yield(s)...
+!---------  -----------  -----------
+   160.000   3.993E-17   1.000E+00
+   165.000   2.679E-17   1.000E+00
+   170.000   3.025E-17   1.000E+00
+   175.000   6.411E-18   1.000E+00
+   180.000   5.411E-18   1.000E+00
+   185.000   4.903E-18   1.000E+00
+   190.000   6.614E-18   1.000E+00
+   195.000   9.578E-18   1.000E+00
+   200.000   1.279E-17   1.000E+00
+   205.000   2.046E-17   1.000E+00
+   210.000   1.943E-17   1.000E+00
+   215.000   2.123E-17   1.000E+00
+   220.000   1.495E-17   1.000E+00
+   225.000   9.259E-18   1.000E+00
+   230.000   1.317E-18   1.000E+00
+   235.000   5.896E-19   1.000E+00
+   240.000   2.027E-19   1.000E+00

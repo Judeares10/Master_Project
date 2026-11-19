@@ -1,0 +1,31 @@
+from pylab import *
+from netCDF4 import *
+from pylab             import *
+from numpy             import *
+from math              import *
+from scipy.interpolate import *
+from scipy.signal      import *
+from scipy.optimize    import *
+from scipy.special     import sph_harm
+from scipy.integrate   import *
+import matplotlib              as mpl
+import matplotlib.font_manager as mpfm
+import mpl_toolkits.mplot3d as m3d
+import pickle
+
+vul_data = 'HD209.vul'
+
+with open(vul_data, 'rb') as handle:
+    data = pickle.load(handle)
+plt.gca().set_yscale('log') 
+plt.gca().invert_yaxis() 
+plt.ylim(1e3,1e-5)
+plt.xlim(500,3000)
+
+
+plt.legend(frameon=0, prop={'size':12}, loc='best')
+plt.plot(data['atm']['Tco'], data['atm']['pco']/1.e6, color='r')
+plt.xlabel("T(K)")
+plt.ylabel("Pressure (bar)")
+plt.title('HD189733b')
+plt.savefig("TEst" + '.png')

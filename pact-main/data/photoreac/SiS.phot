@@ -1,0 +1,14 @@
+1  C
+ SiS + photon = Si + S
+!
+! unknown photoabsorption cross section
+! photoionization threshold is 117.7 nm (NIST Webbook)
+! guess cross section of 1 Mb adopted from photoionization threshold to 250 nm
+!
+! sigma is the total photoabsorption cross section
+! yield is the photodissociation yield relative to photoabsorption
+!
+! wlth[nm]  sigma[cm2]   yield(s)...
+!---------  -----------  -----------
+   117.744   1.000E-18   1.000E+00
+   250.000   1.000E-18   1.000E+00

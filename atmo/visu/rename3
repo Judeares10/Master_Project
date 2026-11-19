@@ -1,0 +1,60 @@
+from netCDF4 import Dataset
+import numpy as np
+import matplotlib.pyplot as plt
+
+# -------------------------------------------------------
+# Files
+# -------------------------------------------------------
+wasp_file = "/home/jh1639/atmo/tutorial/Wasp39b/kurucz_wasp39.ncdf"
+sun_file  = "/home/jh1639/atmo/tutorial/kurucz_sun_sun_units.ncdf"
+
+# -------------------------------------------------------
+# Load WASP-39 model
+# -------------------------------------------------------
+ds_w = Dataset(wasp_file)
+
+nu_w = ds_w.variables["nu"][:]          # cm^-1
+hnu_w = ds_w.variables["hnu"][:]        # erg s^-1 cm^-1 ster^-1
+
+ds_w.close()
+
+# -------------------------------------------------------
+# Load converted UV Sun model
+# -------------------------------------------------------
+ds_s = Dataset(sun_file)
+
+nu_s = ds_s.variables["nu"][:]          # cm^-1
+hnu_s = ds_s.variables["hnu"][:]        # erg s^-1 cm^-1 ster^-1
+
+ds_s.close()
+
+# -------------------------------------------------------
+# Convert wavenumber -> wavelength (microns)
+#
+# lambda[um] = 1e4 / nu[cm^-1]
+# -------------------------------------------------------
+lam_w = 1e4 / nu_w
+lam_s = 1e4 / nu_s
+
+# -------------------------------------------------------
+# Plot
+# -------------------------------------------------------
+plt.figure(figsize=(10,6))
+
+
+plt.semilogy(lam_w, hnu_w*1e3, label="WASP-39",linewidth=0.5)
+plt.semilogy(lam_s, hnu_s*1e3, label="UV Sun Converted",linewidth=0.5)
+
+# Reverse wavelength axis (common in astronomy)
+
+plt.xlabel("Wavelength (micron)")
+plt.ylabel(r"Intensity (erg s$^{-1}$ cm$^{-1}$ ster$^{-1}$)")
+plt.title("Stellar Spectra Comparison")
+
+plt.legend()
+plt.grid(True, which="both", alpha=0.3)
+plt.xlim(0,1)
+plt.tight_layout()
+plt.savefig(("spectra test") +".png", dpi=200,)
+plt.show
+print ("Yay")

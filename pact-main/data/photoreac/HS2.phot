@@ -1,0 +1,14 @@
+1  C
+ HS2 + photon = S2 + H
+!
+! unknown photoabsorption cross section
+! unknown photoionization threshold
+! guess cross section of 1 Mb adopted in the range 100-250 nm
+!
+! sigma is the total photoabsorption cross section
+! yield is the photodissociation yield relative to photoabsorption
+!
+! wlth[nm]  sigma[cm2]   yield(s)...
+!---------  -----------  -----------
+   100.000   1.000E-18   1.000E+00
+   250.000   1.000E-18   1.000E+00

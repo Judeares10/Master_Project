@@ -1,0 +1,33 @@
+ 1  B
+ C2H4OH + photon = CH2OH + CH2
+!
+! photoabsorption cross section from Anastasi et al 1990, J Phys Chem, 94, 6327, data retrieved at https://uv-vis-spectral-atlas-mainz.org/
+!
+! photoionization threshold assumed to be shorter than 210 nm
+! photoionization yield assumed to be 1 shortwards of ionization threshold and 0 longwards
+!
+! assumed products
+!
+! sigma is the total photoabsorption cross section
+! yield is the photodissociation yield relative to photoabsorption
+!
+! wlth[nm]  sigma[cm2]   yield(s)...
+!---------  -----------  -----------
+   210.000   2.050E-18   1.000E+00
+   212.500   1.960E-18   1.000E+00
+   215.000   1.780E-18   1.000E+00
+   217.500   1.790E-18   1.000E+00
+   220.000   1.760E-18   1.000E+00
+   222.500   1.630E-18   1.000E+00
+   225.000   1.430E-18   1.000E+00
+   227.500   1.480E-18   1.000E+00
+   230.000   1.480E-18   1.000E+00
+   232.500   1.340E-18   1.000E+00
+   235.000   1.300E-18   1.000E+00
+   237.500   1.040E-18   1.000E+00
+   240.000   8.840E-19   1.000E+00
+   245.000   6.280E-19   1.000E+00
+   250.000   5.420E-19   1.000E+00
+   255.000   3.410E-19   1.000E+00
+   260.000   2.780E-19   1.000E+00
+   265.000   2.790E-19   1.000E+00

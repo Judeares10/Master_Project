@@ -1,0 +1,35 @@
+;;THIS PROGRAM SETS UP THE PARAMETERS NEEDED BY MULTINETS
+PRO example_multinest,multinest_str,NUM=NUM,SAMPLE_NUM=SAMPLE_NUM,USE_THREADS=USE_THREADS
+
+	LOG_LIKELIHOOD_FUNC = 'example_log_likelihood' ;;REQUIRED: THIS IS THE LOG LIKELIHOOD FUNCTION USED BY MULTINEST
+
+	PRIOR_FUNC = 'example_prior_work3d';'example_prior' ;;REQUIRED: THIS IS THE PRIOR FUNCTION USED BY MULTINEST
+;	PRIOR_FUNC = 'example_prior_work';'example_prior' ;;REQUIRED: THIS IS THE PRIOR FUNCTION USED BY MULTINEST
+
+	NUM_PARAMS=3 ;;REQUIRED: THIS IS THE NUMBER OF FREE PARAMETERS
+
+	if not keyword_set(NUM) then NUM=300 ;;OPTIONAL: THIS IS THE NUMBER OF LIVE POINTS 
+
+	if not keyword_set(SAMPLE_NUM) then SAMPLE_NUM=10 ;;OPTIONAL: THIS IS THE NUMBER OF SAMPLES THAT IT TAKES BEFORE RECLUSTERING
+
+	EXPAND=1.06d ;;OPTIONAL: THIS EXPANSION FACTOR EXPANDS THE SIZE OF THE ELLIPSOIDS
+
+	TOL=0.1; 10;.2d ;;OPTIONAL: THIS IS THE TOLERANCE
+	
+	multinest_str=multinest(LOG_LIKELIHOOD_FUNC,PRIOR_FUNC,NUM_PARAMS,NUM=NUM,$
+							SAMPLE_NUM=SAMPLE_NUM,TOL=TOL,EXPAND=EXPAND,/plot,USE_THREADS=USE_THREADS)
+;	multinest_str=multinest(LOG_LIKELIHOOD_FUNC,PRIOR_FUNC,NUM_PARAMS,NUM=NUM,$\
+;							SAMPLE_NUM=SAMPLE_NUM,TOL=TOL,EXPAND=EXPAND,/plot,NTHREADS=30,/USE_THREADS);,USE_THREADS=USE_THREADS)
+	
+a=MULTINEST_STR.(0)
+LP=MULTINEST_STR.(1)
+plot,transpose(a(0,*)),transpose(a(1,*)),psym=1
+;cgcontour not as usefull for 3d
+cgcontour,LP,transpose(a(0,*)),transpose(a(1,*)),/irregular,nlevels=75,/fill
+cgcontour,LP,transpose(a(0,*)),transpose(a(1,*)),/irregular,nlevels=75,/overplot
+
+cghistoplot,a(0,*),nbins=1000
+cghistoplot,a(1,*),nbins=1000
+cghistoplot,a(2,*),nbins=1000
+
+END

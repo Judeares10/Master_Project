@@ -1,0 +1,21 @@
+ 1  B
+ SiH3 + photon = SiH2 + H
+!
+! photoabsorption cross section from Baklanov & Krasnoperov 2001, J Phys Chem A, 105, 4917, data retrieved at https://uv-vis-spectral-atlas-mainz.org/
+!
+! photoionization threshold is 152.4 nm (NIST Webbook)
+! photoionization yield assumed to be 1 shortwards of ionization threshold and 0 longwards
+!
+! sigma is the total photoabsorption cross section
+! yield is the photodissociation yield relative to photoabsorption
+!
+! wlth[nm]  sigma[cm2]   yield(s)...
+!---------  -----------  -----------
+   206.400   1.580E-17   1.000E+00
+   210.000   1.730E-17   1.000E+00
+   213.900   1.840E-17   1.000E+00
+   217.900   2.010E-17   1.000E+00
+   224.900   1.890E-17   1.000E+00
+   231.900   1.360E-17   1.000E+00
+   243.800   7.900E-18   1.000E+00
+   255.800   2.900E-18   1.000E+00

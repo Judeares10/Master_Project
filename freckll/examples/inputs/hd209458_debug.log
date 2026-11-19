@@ -1,0 +1,47 @@
+freckll - INFO - FRECKLL version 0.0.2.
+freckll - INFO - Start Date: 2026-10-23T15:51:18.267295
+freckll - INFO - Input file: hd209458_reduced.yml
+freckll - INFO - Output file: hd209458_debug.h5
+freckll - INFO - Beginning Solve...
+freckll.Rosenbrock - INFO - System parameters set. Compiling reactions.
+freckll.Rosenbrock - INFO - Using Transform: UnityTransform
+/home/jh1639/.venv/lib/python3.12/site-packages/freckll/reactions/common.py:62: UserWarning: 'where' used without 'out', expect unitialized memory in output. If this is intentional, use out=None.
+  k_kinf = np.divide(k_rate * m_concentration, k_inf, where=k_inf != 0)
+/home/jh1639/.venv/lib/python3.12/site-packages/freckll/reactions/common.py:62: UserWarning: 'where' used without 'out', expect unitialized memory in output. If this is intentional, use out=None.
+  k_kinf = np.divide(k_rate * m_concentration, k_inf, where=k_inf != 0)
+/home/jh1639/.venv/lib/python3.12/site-packages/freckll/reactions/common.py:62: UserWarning: 'where' used without 'out', expect unitialized memory in output. If this is intentional, use out=None.
+  k_kinf = np.divide(k_rate * m_concentration, k_inf, where=k_inf != 0)
+/home/jh1639/.venv/lib/python3.12/site-packages/freckll/reactions/common.py:62: UserWarning: 'where' used without 'out', expect unitialized memory in output. If this is intentional, use out=None.
+  k_kinf = np.divide(k_rate * m_concentration, k_inf, where=k_inf != 0)
+freckll.Rosenbrock - INFO - ydot sum/min/max: -6.57E+13 / -9.33E+22 / 1.09E+23 Time/log(Time): 1.00E-13 / -1.30E+01
+freckll.Rosenbrock - INFO - Convergence test: dy: 3.38E+05, dydt: 3.38E+18
+/home/jh1639/.venv/lib/python3.12/site-packages/freckll/reactions/common.py:62: UserWarning: 'where' used without 'out', expect unitialized memory in output. If this is intentional, use out=None.
+  k_kinf = np.divide(k_rate * m_concentration, k_inf, where=k_inf != 0)
+/home/jh1639/.venv/lib/python3.12/site-packages/freckll/reactions/common.py:62: UserWarning: 'where' used without 'out', expect unitialized memory in output. If this is intentional, use out=None.
+  k_kinf = np.divide(k_rate * m_concentration, k_inf, where=k_inf != 0)
+/home/jh1639/.venv/lib/python3.12/site-packages/freckll/reactions/common.py:62: UserWarning: 'where' used without 'out', expect unitialized memory in output. If this is intentional, use out=None.
+  k_kinf = np.divide(k_rate * m_concentration, k_inf, where=k_inf != 0)
+freckll.Rosenbrock - INFO - ydot sum/min/max: -7.39E+51 / -3.65E+56 / 3.51E+56 Time/log(Time): 1.02E-13 / -1.30E+01
+freckll.Rosenbrock - INFO - Convergence test: dy: 1.40E+06, dydt: 9.33E+20
+/home/jh1639/.venv/lib/python3.12/site-packages/freckll/reactions/common.py:62: UserWarning: 'where' used without 'out', expect unitialized memory in output. If this is intentional, use out=None.
+  k_kinf = np.divide(k_rate * m_concentration, k_inf, where=k_inf != 0)
+/home/jh1639/.venv/lib/python3.12/site-packages/freckll/reactions/common.py:62: UserWarning: 'where' used without 'out', expect unitialized memory in output. If this is intentional, use out=None.
+  k_kinf = np.divide(k_rate * m_concentration, k_inf, where=k_inf != 0)
+/home/jh1639/.venv/lib/python3.12/site-packages/freckll/chegp.py:274: RuntimeWarning: invalid value encountered in multiply
+  coeffs[7] *= 0.0
+/home/jh1639/.venv/lib/python3.12/site-packages/freckll/chegp.py:275: RuntimeWarning: invalid value encountered in multiply
+  coeffs[8] *= 0.0
+/home/jh1639/.venv/lib/python3.12/site-packages/freckll/reactions/common.py:62: UserWarning: 'where' used without 'out', expect unitialized memory in output. If this is intentional, use out=None.
+  k_kinf = np.divide(k_rate * m_concentration, k_inf, where=k_inf != 0)
+freckll.Rosenbrock - INFO - Reducing step size
+freckll.Rosenbrock - INFO - Minimum step size reached
+/home/jh1639/.venv/lib/python3.12/site-packages/freckll/reactions/common.py:62: UserWarning: 'where' used without 'out', expect unitialized memory in output. If this is intentional, use out=None.
+  k_kinf = np.divide(k_rate * m_concentration, k_inf, where=k_inf != 0)
+freckll.Rosenbrock - INFO - Number of Jacobian evaluations: 3
+freckll.Rosenbrock - INFO - Number of dndt evaluations: 6
+freckll.Rosenbrock - INFO - Success: False
+freckll - ERROR - Solve failed.
+freckll - INFO - Writing output to hd209458_debug.failed.h5
+freckll - INFO - Output complete.
+freckll - INFO - Solve time: 4.55 seconds
+freckll - INFO - End Date: 2026-10-23T15:51:22.817554

@@ -1,0 +1,1 @@
+/data/eh484/kabs/c2h2_500_t5e-3_uw1116.nc

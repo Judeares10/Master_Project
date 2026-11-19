@@ -1,0 +1,18 @@
+ 1  C
+ C4H7 + photon = C4H6 + H
+!
+! photoabsorption cross section from Bayratceken et al 2006, Spectrochim Acta A: Mol Biomol Spectr, 65, 143, data retrieved from https://uv-vis-spectral-atlas-mainz.org/
+!
+! photoionization threshold is 156.9 nm (NIST Webbook)
+! photoionization yield assumed to be 1 shortwards of ionization threshold and 0 longwards
+!
+! sigma is the total photoabsorption cross section
+! yield is the photodissociation yield relative to photoabsorption
+!
+! wlth[nm]  sigma[cm2]   yield(s)...
+!---------  -----------  -----------
+   232.400   7.570E-17   1.000E+00
+   233.300   1.090E-16   1.000E+00
+   235.000   9.600E-17   1.000E+00
+   236.000   1.350E-16   1.000E+00
+   237.800   1.910E-16   1.000E+00

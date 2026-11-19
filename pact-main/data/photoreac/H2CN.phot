@@ -1,0 +1,15 @@
+ 1  C
+ H2CN + photon = HCN + H
+!
+! photoabsorption cross section from Horne & Norrish 1970, Proc Roy Soc London A, 315, 301, data retrieved at https://uv-vis-spectral-atlas-mainz.org/
+!
+! photoionization threshold is 131.9 nm (NIST Webbook)
+! photoionization yield assumed to be 1 shortwards of ionization threshold and 0 longwards
+!
+! sigma is the total photoabsorption cross section
+! yield is the photodissociation yield relative to photoabsorption
+!
+! wlth[nm]  sigma[cm2]   yield(s)...
+!---------  -----------  -----------
+   280.800   2.280E-18   1.000E+00
+   285.000   1.190E-18   1.000E+00

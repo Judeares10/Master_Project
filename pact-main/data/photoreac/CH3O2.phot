@@ -1,0 +1,32 @@
+ 1  B
+ CH3O2 + photon = CH3O + O
+!
+! photoabsorption cross section from Sander et al 2011, JPL Publication 10-6, data retrieved at https://uv-vis-spectral-atlas-mainz.org/
+!
+! photoionization threshold is 121.37 nm (Tang et al 2020, J Chem Phys, 152, 104301)
+! photoionization yield assumed to be 1 shortwards of ionization threshold and 0 longwards
+!
+! sigma is the total photoabsorption cross section
+! yield is the photodissociation yield relative to photoabsorption
+!
+! wlth[nm]  sigma[cm2]   yield(s)...
+!---------  -----------  -----------
+   205.000   1.650E-18   1.000E+00
+   210.000   2.190E-18   1.000E+00
+   215.000   2.760E-18   1.000E+00
+   220.000   3.300E-18   1.000E+00
+   225.000   3.760E-18   1.000E+00
+   230.000   4.080E-18   1.000E+00
+   235.000   4.240E-18   1.000E+00
+   240.000   4.240E-18   1.000E+00
+   245.000   4.070E-18   1.000E+00
+   250.000   3.780E-18   1.000E+00
+   255.000   3.390E-18   1.000E+00
+   260.000   2.940E-18   1.000E+00
+   265.000   2.480E-18   1.000E+00
+   270.000   2.030E-18   1.000E+00
+   275.000   1.620E-18   1.000E+00
+   280.000   1.260E-18   1.000E+00
+   285.000   9.610E-19   1.000E+00
+   290.000   7.150E-19   1.000E+00
+   295.000   5.200E-19   1.000E+00

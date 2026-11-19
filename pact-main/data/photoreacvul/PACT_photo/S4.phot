@@ -1,0 +1,19 @@
+1  A
+ S4 + photon = S2 + S2
+!
+! Converted from VULCAN photochemistry data
+! Cross sections from S4_cross.csv
+! Branching ratios from S4_branch.csv
+!
+! sigma is the total photoabsorption cross section
+! yields are relative to total photoabsorption
+!
+! wlth[nm]  sigma[cm2]   yield(s)...
+!---------  -----------  -----------
+   425.000   1.340E-19   1.000E+00
+   450.000   2.540E-18   1.000E+00
+   475.000   3.400E-18   1.000E+00
+   500.000   5.200E-18   1.000E+00
+   525.000   3.520E-18   1.000E+00
+   550.000   2.270E-18   1.000E+00
+   575.000   1.820E-18   1.000E+00
